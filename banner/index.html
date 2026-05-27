@@ -1,12 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banner</title>
+
+  <style>
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 300px;
+    }
+
+    .banner-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .banner-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.45);
+    }
+
+    .banner-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .banner-title {
+      font-size: 2.5rem;
+      color: white;
+      font-weight: bold;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    .banner-subtitle {
+      color: #f0f0f0;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-    <p>test</p>
+
+  <div class="banner">
+    <img
+      class="banner-image"
+      src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=868&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    />
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h1 class="banner-title">Tecnologia que transforma sorrisos</h1>
+      <p class="banner-subtitle">Equipamentos de precisão para consultórios que não param.</p>
+    </div>
+  </div>
+
 </body>
 </html>
